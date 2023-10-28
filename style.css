@@ -25,4 +25,16 @@ h1 {
     width: 450px;
 }
 
+/* Figure drawing */
+.figure-container {
+    fill: transparent;
+    stroke: #fff;
+    stroke-width: 4px;
+    stroke-linecap: round;
+}
+
+.figure-part {
+    display: none;
+}
+
 }
