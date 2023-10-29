@@ -39,25 +39,3 @@ Replace `your_api_key_here` with the API key you obtained from `api-ninjas.com`.
      ```
      http://localhost:3000
      ```
-### Production:
-
-- **Build Assets:**
-
-  ```bash
-  npm run build
-  ```
-
-- **Start the Server:**
-
-  ```bash
-  export API_KEY=your_api_key_here && node index.js
-  ```
-Replace `your_api_key_here` with the API key you obtained from `api-ninjas.com`.
-
-- **Access the Application:**
-
-  Open your browser and navigate to:
-
-  ```
-  http://localhost:3000
-  ```
