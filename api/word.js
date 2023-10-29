@@ -1,10 +1,10 @@
-const express = require('express');
 const axios = require('axios');
-const app = express();
+const express = require("express");
+const router = express.Router();
 
 
 // Creating a new endpoint to fetch the word from the external API
-app.get('/getWord', async (req, res) => {
+router.get('/', async (req, res) => {
     console.log("In get word");
     console.log(process.env.API_KEY);
   try {
@@ -20,4 +20,6 @@ app.get('/getWord', async (req, res) => {
   }
 });
 
-module.exports = app;
+module.exports = router;
+
+

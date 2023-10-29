@@ -10,7 +10,7 @@ const finalMessage = document.getElementById('final-message');
 const figureParts = document.querySelectorAll('.figure-part');
 
 var request = new XMLHttpRequest();
-request.open('GET', '/getWord');
+request.open('GET', '/api/word');
 request.send();
 request.onreadystatechange = function() {
   if (request.readyState == XMLHttpRequest.DONE) {
