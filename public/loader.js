@@ -45,7 +45,7 @@ let barInterval = setInterval(() => {
 		gsap.to(".loading__box", {
 			delay: 2,
 			duration: 5,
-			border: "none"
+			// border: ""none""
 		});
 
 		// Make the background transparent.
@@ -58,7 +58,10 @@ let barInterval = setInterval(() => {
 			background: "transparent",
 
             // Make the image dissapear
-			opacity: 0
-		});
+			opacity: 0,
+
+		}).then(() => {
+            document.querySelector('.loading').style.display = 'none';
+        });
 	}
 }, 20);
