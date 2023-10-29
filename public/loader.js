@@ -62,6 +62,12 @@ let barInterval = setInterval(() => {
 
 		}).then(() => {
             document.querySelector('.loading').style.display = 'none';
+
+            // Check if the device is a mobile device
+            if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+                const hiddenInput = document.getElementById('hidden-input');
+                hiddenInput.focus();
+            }
         });
 	}
 }, 20);
