@@ -1,10 +1,18 @@
 * {
     box-sizing: border-box;
+    font-family: 'Source Code Pro', monospace;
+  }
+
+  :root {
+    --primary-background-color: #1e2d42;
+    --primary-color: #bbc1b7;
+    --font-size: 16px;
+    --spacing: 1rem;
   }
 
   body {
-    background-color: #34495e;
-    color: #fff;
+    background-color: #1e2d42;
+    color: #bbc1b7;
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
@@ -28,7 +36,7 @@
 
   .figure-container {
     fill: transparent;
-    stroke: #fff;
+    stroke: #bbc1b7;
     stroke-width: 4px;
     stroke-linecap: round;
   }
@@ -63,7 +71,7 @@
   }
 
   .letter {
-    border-bottom: 3px solid #2980b9;
+    border-bottom: 3px solid #65ac9b;
     display: inline-flex;
     font-size: 30px;
     align-items: center;
@@ -87,7 +95,7 @@
   }
 
   .popup {
-    background: #2980b9;
+    background: #65ac9b;
     border-radius: 5px;
     box-shadow: 0 15px 10px 3px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -97,7 +105,7 @@
   .popup button {
     cursor: pointer;
     background-color: #fff;
-    color: #2980b9;
+    color: #65ac9b;
     border: 0;
     margin-top: 20px;
     padding: 12px 20px;
