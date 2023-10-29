@@ -27,6 +27,7 @@ request.onreadystatechange = function() {
                 .split('')
                 .map(
                     letter => `
+                    <input type="text" id="hidden-input" style="opacity: 0; position: absolute; z-index: -1;" maxlength="1">
                     <span class="letter">
                         ${correctLetters.includes(letter) ? letter : ''}
                     </span>
