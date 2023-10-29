@@ -2,8 +2,8 @@ const express = require("express");
 const app = express();
 const word = require("./api/word");
 
-// Serving static files such as index.html from the 'public' directory
 app.use(express.static('public'));
+app.use(express.json({ extended: false }));
 
 app.use("/api/word", word);
 
