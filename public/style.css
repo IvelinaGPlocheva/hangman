@@ -2,7 +2,33 @@
     box-sizing: border-box;
     font-family: 'Source Code Pro', monospace;
   }
-
+  button,
+  input,
+  textarea,
+  select {
+      font: inherit;
+  }
+  
+  p, h1, h2, h3, h4, h5, h6 {
+      overflow-wrap: break-word;
+  }
+  
+  img,
+  video,
+  canvas,
+  svg {
+      max-width: 100%;
+  }
+  
+  a {
+      text-decoration: none;
+      color: inherit;
+  }
+  
+  ul {
+      list-style: none;
+  }
+  
   :root {
     --primary-background-color: #1e2d42;
     --primary-color: #bbc1b7;

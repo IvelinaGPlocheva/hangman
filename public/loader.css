@@ -1,0 +1,119 @@
+/* -----Variables------*/
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 99;
+    background: #1e2d42;
+    display: grid;
+    place-items: center;
+}
+.loading__box {
+    position: relative;
+    width: 500px;
+    height: 200px;
+    border: 3px solid #65ac9b;
+    border-top: 3px solid #65ac9b 7a;
+    border-bottom: 3px solid #65ac9b 7a;
+}
+@media (max-width: 600px) {
+    .loading__box {
+        width: 90vw;
+   }
+}
+.loading__bar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ccc;
+    border-radius: 2px;
+    width: 90%;
+    height: 10px;
+}
+.loading__bar--inner {
+    height: 100%;
+    width: 0%;
+    border-radius: 2px;
+    background: #65ac9b;
+}
+.loading__text {
+    position: relative;
+    color: #fff;
+    padding: 1rem;
+    font-size: 29px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width: 400px) {
+    .loading__text {
+        font-size: 13px;
+   }
+}
+.loading__text--dot {
+    width: 15px;
+    height: 15px;
+    margin: 0 3px;
+    border-radius: 50%;
+    background: #fff;
+    animation: pulse 1s infinite;
+}
+@keyframes pulse {
+    from {
+        opacity: 0;
+        background: #65ac9b;
+   }
+    to {
+        opacity: 1;
+   }
+}
+.loading__text--border {
+    width: 85%;
+    height: 1px;
+    background: #6cff8c 7a;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.loading__counter {
+    position: absolute;
+    top: 70%;
+    left: 0;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.loading__counter--number {
+    color: #65ac9b;
+}
+.loading__width_animation {
+    animation: width_animation 1s forwards;
+}
+@keyframes width_animation {
+    0% {
+        width: 85%;
+   }
+    100% {
+        width: 280px;
+   }
+}
+.loading__svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    opacity: 0;
+}
