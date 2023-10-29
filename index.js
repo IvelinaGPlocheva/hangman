@@ -3,7 +3,7 @@ const axios = require('axios');
 const app = express();
 
 // Serving static files such as index.html from the 'public' directory
-app.use(express.static('public/dist'));
+app.use(express.static('public'));
 
 
 // Creating a new endpoint to fetch the word from the external API

@@ -4,13 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel public/index.html --out-dir public/dist",
-    "build": "parcel build public/index.html --out-dir public/dist"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2"
+    "axios": "^1.6.0",
+    "express": "^4.18.2",
+    "nodemon": "^3.0.1"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.5"
