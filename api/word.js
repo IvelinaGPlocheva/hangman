@@ -5,8 +5,6 @@ const router = express.Router();
 
 // Creating a new endpoint to fetch the word from the external API
 router.get('/', async (req, res) => {
-    console.log("In get word");
-    console.log(process.env.API_KEY);
   try {
     const response = await axios.get('https://api.api-ninjas.com/v1/randomword?type=noun', {
       headers: {
