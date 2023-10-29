@@ -28,7 +28,7 @@
   ul {
       list-style: none;
   }
-  
+
   :root {
     --primary-background-color: #1e2d42;
     --primary-color: #bbc1b7;
@@ -57,7 +57,6 @@
     position: relative;
     margin: auto;
     height: 350px;
-    width: 450px;
   }
 
   .figure-container {
