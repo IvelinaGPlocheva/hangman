@@ -39,6 +39,10 @@
 
     <h1>Hangman</h1>
     <p>Find the hidden word - Enter a letter</p>
+    <div class="wrong-letters-container">
+        <div id="wrong-letters"></div>
+      </div>
+
     <div class="game-container">
       <svg height="250" width="200" class="figure-container">
         <!-- Rod -->
@@ -58,10 +62,6 @@
         <line x1="140" y1="150" x2="120" y2="180" class="figure-part" />
         <line x1="140" y1="150" x2="160" y2="180" class="figure-part" />
       </svg>
-
-      <div class="wrong-letters-container">
-        <div id="wrong-letters"></div>
-      </div>
 
       <div class="word" id="word"></div>
       <input type="text" id="hidden-input" style="opacity: 0; position: absolute;">
