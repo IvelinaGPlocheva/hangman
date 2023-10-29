@@ -8,6 +8,8 @@ app.use(express.static('public'));
 
 // Creating a new endpoint to fetch the word from the external API
 app.get('/getWord', async (req, res) => {
+    console.log("In get word");
+    console.log(process.env.API_KEY);
   try {
     const response = await axios.get('https://api.api-ninjas.com/v1/randomword?type=noun', {
       headers: {
