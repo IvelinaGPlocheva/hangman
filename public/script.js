@@ -72,11 +72,12 @@ request.onreadystatechange = function() {
 
             // Show notification
             function showNotification() {
-            notification.classList.add('show');
+                notification.style.display = 'block';
+                notification.classList.add('show');
 
-            setTimeout(() => {
-                notification.classList.remove('show');
-            }, 2000);
+                setTimeout(() => {
+                    notification.classList.remove('show');
+                }, 2000);
             }
 
             // Keydown letter press

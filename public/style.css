@@ -152,6 +152,7 @@
     position: absolute;
     bottom: -50px;
     transition: transform 0.3s ease-in-out;
+    display: none;
   }
 
   .notification-container p {
